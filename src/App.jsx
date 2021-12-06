@@ -15,8 +15,8 @@ function App() {
       return;
     }
 
-    const nemItems = items.filter((item) => item.category === category);
-    setMenuItems(nemItems);
+    const newItems = items.filter((item) => item.category === category);
+    setMenuItems(newItems);
   };
   return (
     <main>
