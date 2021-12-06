@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import Categories from "./Categories";
 import items from "./data";
 import Menu from "./Menu";
@@ -7,7 +7,7 @@ const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 function App() {
   const [menuItems, setMenuItems] = useState(items);
-  const [categories, setCategories] = useState(allCategories);
+  const categories = allCategories;
 
   const filterItems = (category) => {
     if (category === "all") {
